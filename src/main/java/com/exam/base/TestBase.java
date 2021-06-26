@@ -27,7 +27,7 @@ public class TestBase {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         //river.get("https://apple.com");
-        openURL("https://apple.com");
+        //openURL("https://apple.com");
     }
     public static void openURL(String url){
         driver.get(url);

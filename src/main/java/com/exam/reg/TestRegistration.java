@@ -111,10 +111,10 @@ public class TestRegistration extends TestBase {
 
         //step 3: Compare
         if(Exp_Title.equals(Act_Title)){
-            System.out.println("Test PASSED!! for Valid test Data");
+            System.out.println("TestCase PASSED!! for Valid test Data");
         }
         else {
-            System.out.println("Test Failed!! for Valid test Data");
+            System.out.println("TestCase Failed!! for Valid test Data");
         }
 
         TestLogout.logOut();
