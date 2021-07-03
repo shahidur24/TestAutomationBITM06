@@ -26,7 +26,7 @@ public class TestBase {
         System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//src//main//resources//chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        //river.get("https://apple.com");
+        //driver.get("https://apple.com");
         //openURL("https://apple.com");
     }
     public static void openURL(String url){

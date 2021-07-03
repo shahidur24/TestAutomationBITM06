@@ -2,9 +2,15 @@
 <suite name="Test Suite 001">
     <test name="Simple Test">
         <classes>
-            <class name="com.exam.testNGDemo.TC_001"> </class>
-            <class name = "com.exam.testNGDemo.TC_002"> </class>
-            <class name = "com.exam.testNGDemo.TC_003"> </class>
+            <!--            <class name="com.exam.testNGDemo.TC_001"> </class>-->
+            <!--            <class name = "com.exam.testNGDemo.TC_002"> </class>-->
+            <!--            <class name = "com.exam.testNGDemo.TC_003"> </class>-->
+            <!--            <class name = "com.exam.testNGDemo.LoginTestNG"> </class>-->
+            <!-- <class name="com.exam.browseroption.BasicAuthentication"></class>-->
+            <!--            <class name = "com.exam.browseroption.HeadlessTest"> </class>-->
+            <class name="com.exam.frame.SingleFrame"></class>
+
+
         </classes>
     </test>
 
