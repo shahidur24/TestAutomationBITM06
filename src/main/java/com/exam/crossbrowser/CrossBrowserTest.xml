@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite 001">
+    <test name="Cross Test Chrome">
+        <parameter name="Browser" value="chrome"></parameter>
+        <classes>
+<!--                        <class name="com.exam.testNGDemo.TC_001"> </class>-->
+<!--                        <class name = "com.exam.testNGDemo.TC_002"> </class>-->
+<!--                        <class name = "com.exam.testNGDemo.TC_003"> </class>-->
+<!--                        <class name = "com.exam.testNGDemo.LoginTestNG"> </class>-->
+<!--                        <class name="com.exam.browseroption.BasicAuthentication"></class>-->
+            <!--            <class name = "com.exam.browseroption.HeadlessTest"> </class>-->
+            <!--<class name="com.exam.frame.SingleFrame"></class>-->
+            <class name="com.exam.crossbrowser.CrossBrowserTest"></class>
+
+       </classes>
+    </test>
+
+    <test name="Cross Test Frirfox">
+        <parameter name="Browser" value="firefox"></parameter>
+        <classes>
+            <!--                        <class name="com.exam.testNGDemo.TC_001"> </class>-->
+            <!--                        <class name = "com.exam.testNGDemo.TC_002"> </class>-->
+            <!--                        <class name = "com.exam.testNGDemo.TC_003"> </class>-->
+            <!--                        <class name = "com.exam.testNGDemo.LoginTestNG"> </class>-->
+            <!--                        <class name="com.exam.browseroption.BasicAuthentication"></class>-->
+            <!--            <class name = "com.exam.browseroption.HeadlessTest"> </class>-->
+            <!--<class name="com.exam.frame.SingleFrame"></class>-->
+            <class name="com.exam.crossbrowser.CrossBrowserTest"></class>
+
+        </classes>
+    </test>
+
+</suite>

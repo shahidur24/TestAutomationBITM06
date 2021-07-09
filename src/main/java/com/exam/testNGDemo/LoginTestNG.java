@@ -10,23 +10,25 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class LoginTestNG{
+public class LoginTestNG {
     public static WebDriver driver;
 
     @BeforeClass
-    public  void setup() {
-        System.setProperty("webdriver.chrome.driver","G:\\Tutorials\\TestingQA_BITM\\TestingSoftware\\chromedriver_win32\\chromedriver.exe");
+    public void setup() {
+        System.setProperty("webdriver.chrome.driver", "G:\\Tutorials\\TestingQA_BITM\\TestingSoftware\\chromedriver_win32\\chromedriver.exe");
         //set driver path dynamic
-        System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//src//main//resources//chromedriver.exe");
+        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//src//main//resources//chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://demo.opencart.com/index.php?route=account/login");
 
     }
+
     @AfterClass
-    public void tearDown(){
+    public void tearDown() {
         driver.quit();
     }
-@Test
+
+    @Test
     public static void TC_Login_Invalid_001() {
         WebElement Email = driver.findElement(By.xpath("//input[@id='input-email']"));
         WebElement Password = driver.findElement(By.xpath("//input[@id='input-password']"));
@@ -56,6 +58,7 @@ public class LoginTestNG{
         }
         System.out.println("Test Case 001 Executed");
     }
+
     @Test
     public static void TC_Login_Valid_002() {
         WebElement Email = driver.findElement(By.xpath("//input[@id='input-email']"));
