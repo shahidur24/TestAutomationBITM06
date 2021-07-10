@@ -45,7 +45,7 @@ public class DP_LoginTest {
     @Test(dataProvider="LoginData")
     public void loginTest(String DP_Email,String DP_Pass){
 
-       driver.get(BaseURL);
+        driver.get(BaseURL);
         WebElement Email = driver.findElement(By.xpath("//input[@id='input-email']"));
         WebElement Password = driver.findElement(By.xpath("//input[@id='input-password']"));
         WebElement LoginBtn = driver.findElement(By.cssSelector("#content > div > div:nth-child(2) > div > form > input"));
